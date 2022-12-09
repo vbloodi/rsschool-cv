@@ -32,3 +32,13 @@ let dRoot = Math.sqrt(d);
 console.log("x1 = ", (-b + dRoot) / (2 * a));
 console.log("x2 = ", (-b - dRoot) / (2 * a));
 ```
+## Working experience:
++ [Project CV](https://vbloodi.github.io/rsschool-cv/cv "Project CV link")
+
+## Education:
++ Rolling Scopes School Front-end Course - Stage#0
+
+## English:
++ A2+
++ I've got some practice of chatting in English from some online games.
+---
