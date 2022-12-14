@@ -9,6 +9,7 @@
     <title>Curriculum Vitae</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <!-- <script type="text/javascript" src="https://unpkg.com/external-svg-loader@latest/svg-loader.min.js" async></script> -->
 </head>
@@ -30,7 +31,10 @@
     <main class="main">
       <div class="main-container">
         <div class="main-left">
-          <img class="main-left__avatar" src="" alt="My Photo">
+          <div class="main-left__img">
+            <img class="main-left__avatar" src="./pictures/my-photo.jpg" alt="My Photo">
+            <div class="main-left__picture"></div>
+          </div>
           <nav class="main-left__nav nav">
             <ul class="nav__item">
               <span class="nav__icon"></span>
@@ -55,29 +59,35 @@
           </nav>
           <section class="main-left__tech-stack tech-stack">
             <h2 class="tech-stack__title">Tech-Stack</h2>
-            <div class="tech-stack__item">
-              <span class="tech-stack__icon"></span>
-              <span class="tech-stack__name">HTML</span>
+            <div class="tech-stack__row">
+              <div class="tech-stack__item">
+                <span class="tech-stack__icon"></span>
+                <span class="tech-stack__name">HTML</span>
+              </div>
+              <div class="tech-stack__item">
+                <span class="tech-stack__icon"></span>
+                <span class="tech-stack__name">Figma</span>
+              </div>
             </div>
-            <div class="tech-stack__item">
-              <span class="tech-stack__icon"></span>
-              <span class="tech-stack__name">Figma</span>
+            <div class="tech-stack__row">
+              <div class="tech-stack__item">
+                <span class="tech-stack__icon"></span>
+                <span class="tech-stack__name">CSS</span>
+              </div>
+              <div class="tech-stack__item">
+                <span class="tech-stack__icon"></span>
+                <span class="tech-stack__name">Photoshop</span>
+              </div>
             </div>
-            <div class="tech-stack__item">
-              <span class="tech-stack__icon"></span>
-              <span class="tech-stack__name">CSS</span>
-            </div>
-            <div class="tech-stack__item">
-              <span class="tech-stack__icon"></span>
-              <span class="tech-stack__name">Photoshop</span>
-            </div>
-            <div class="tech-stack__item">
-              <span class="tech-stack__icon"></span>
-              <span class="tech-stack__name">Git</span>
-            </div>
-            <div class="tech-stack__item">
-              <span class="tech-stack__icon"></span>
-              <span class="tech-stack__name">JavaScript</span>
+            <div class="tech-stack__row">
+              <div class="tech-stack__item">
+                <span class="tech-stack__icon"></span>
+                <span class="tech-stack__name">Git</span>
+              </div>
+              <div class="tech-stack__item">
+                <span class="tech-stack__icon"></span>
+                <span class="tech-stack__name">JavaScript</span>
+              </div>
             </div>
           </section>
           <section class="main-left-qualities qualities">
