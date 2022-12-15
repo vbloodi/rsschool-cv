@@ -55,8 +55,8 @@
 }
 
 :root {
-  --primary-orange: #EDA652;
-  --primary-blue: #4F85EF;
+  --primary-orange: #eda652;
+  --primary-blue: #4f85ef;
   --secondary-dark: #333333;
 }
 
@@ -68,7 +68,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Montserrat',sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-size: 16px;
 }
@@ -98,6 +98,7 @@ a {
 .project__title,
 .code-example__title,
 .interest__title {
+  margin-bottom: 10px;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -112,7 +113,7 @@ a {
   justify-content: space-between;
   height: 32px;
   padding: 4px;
-  background: #FFFEFD;
+  background: #fffefd;
   border-radius: 5px 5px 0px 0px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
 }
@@ -146,7 +147,7 @@ a {
   width: 240px;
   height: 768px;
   padding: 0 10px;
-  background: #FAFDFF;
+  background: #fafdff;
   box-shadow: 1px 0px 5px rgba(127, 174, 245, 0.25);
 }
 
@@ -197,7 +198,7 @@ a {
   background: #ffffff;
   border-width: 1px 1px 1px 0px;
   border-style: solid;
-  border-color: #C7C7C7;
+  border-color: #c7c7c7;
   box-shadow: 0px 4px 4px rgba(215, 215, 215, 0.25);
   border-radius: 35px;
 }
@@ -210,8 +211,8 @@ a {
   color: var(--secondary-dark);
 }
 
-.tech-stack__title {
-  margin-bottom: 6px;
+.tech-stack {
+  margin-bottom: 14px;
 }
 
 .tech-stack__row:not(:last-child) {
@@ -230,6 +231,316 @@ a {
   color: #343434;
 }
 
+.qualities__list {
+  margin-left: 9px;
+  list-style-type: "\2022";
+}
+
+.qualities__item {
+  padding-left: 6px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #000000;
+}
+
+.qualities__item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
 /* --- MAIN-RIGHT --- */
 
+.info {
+  margin: 59px 20px 26px 70px;
+}
+
+.info__my-name {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 34px;
+  color: var(--secondary-dark);
+}
+
+.info__my-name-color {
+  color: var(--primary-orange);
+}
+
+.info__profession {
+  margin-bottom: 9px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--secondary-dark);
+}
+
+.info__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.main-right__container {
+  margin: 0px 20px 8px 20px;
+  width: 315px;
+  height: 483px;
+}
+
+/* --- MAIN-RIGHT-PAGE-1 --- */
+
+/* .exp {
+  display: none;
+} */
+
+.exp__list {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.exp__list:last-child {
+  margin-bottom: 14px;
+}
+
+.exp__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.exp__date {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--secondary-dark);
+}
+
+.exp__sphere-activity {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.exp__link {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--primary-blue);
+  opacity: 0.8;
+}
+
+.exp__direction {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.exp__skills {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  color: var(--secondary-dark);
+}
+
+.exp__skills-color {
+  font-weight: 700;
+}
+
+.education {
+  margin-bottom: 14px;
+}
+
+.language {
+  margin-bottom: 23px;
+}
+
+.education,
+.language {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c7c7c7;
+  /* display: none; */
+}
+
+.education__text,
+.language__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--secondary-dark);
+}
+
+.next-page {
+  display: flex;
+  flex-direction: row-reverse;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #343434;
+  opacity: 0.5;
+  /* display: none; */
+}
+
+/* --- MAIN-RIGHT-PAGE-2 --- */
+
+.project__list {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.project__list:last-child {
+  margin-bottom: 14px;
+}
+
+.project__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project__date {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--secondary-dark);
+}
+
+.project__sphere-activity {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.project__link {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--primary-blue);
+  opacity: 0.8;
+}
+
+.project__direction {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.project__skills {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  color: var(--secondary-dark);
+}
+
+.project__skills-color {
+  font-weight: 700;
+}
+
+.code-example {
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.code-example__field {
+  width: 274px;
+  height: 164px;
+  background: #1e1e1e;
+  border-radius: 4px;
+}
+
+.code-example__code {
+  padding: 5px 5px 5px 10px;
+  font-family: "Courier New";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 11px;
+  color: #ffffff;
+}
+
+.code-example__code-green {
+  color: #6a9955;
+}
+
+.code-example__code-light-green {
+  color: #b5cea8;
+}
+
+.code-example__code-blue {
+  color: #569cd6;
+}
+
+.code-example__code-light-blue {
+  color: #9cdcfe;
+}
+
+.code-example__code-light-pink {
+  color: #c586c0;
+}
+
+.code-example__code-light-yellow {
+  color: #ffc813;
+}
+
+.interest__row {
+  display: flex;
+}
+
+.interest__name {
+  margin-left: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #343434;
+}
+
+.interest__row:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.interest__row:last-child {
+  padding-bottom: 10px;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.prev-page {
+  display: flex;
+  flex-direction: row-reverse;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #343434;
+  opacity: 0.5;
+}
+
 /* --- FOOTER --- */
+
+.footer-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 42px;
+  border-radius: 0px 0px 5px 5px;
+  background: #fffefd;
+  box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.footer-year {
+  padding: 12px 19px 13px 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--secondary-dark);
+  opacity: 0.5;
+}
