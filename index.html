@@ -11,19 +11,28 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <!-- <script type="text/javascript" src="https://unpkg.com/external-svg-loader@latest/svg-loader.min.js" async></script> -->
   </head>
   <body>
     <div class="body-container">
       <header class="header">
         <div class="header-container">
-          <div class="header-icon"></div>
+          <img
+            class="header-icon"
+            src="./images/clip-icon.svg"
+            alt="clip-icon"
+          />
           <div class="header-download">
             <div class="header-download__format format">
-              <a href="" class="format__pdf">pdf</a>
-              <a href="" class="format__docx">docx</a>
+              <div class="format__download-links">
+                <a href="" class="format__pdf">pdf</a>
+                <a href="" class="format__docx">docx</a>
+              </div>
+              <img
+                class="header-download__icon"
+                src="./images/download-icon.svg"
+                alt="download-icon"
+              />
             </div>
-            <div class="header-download__icon"></div>
           </div>
         </div>
       </header>
@@ -40,25 +49,45 @@
             </div>
             <nav class="main-left__nav nav">
               <ul class="nav__item">
-                <span class="nav__icon"></span>
+                <img
+                  class="nav__icon"
+                  src="./images/linkedin-icon.svg"
+                  alt="linkedin-icon"
+                  onload="SVGInject(this)"
+                />
                 <a href="https://linkedin.com/in/vbloodi" class="nav__link"
                   >linkedin.com/in/vbloodi</a
                 >
               </ul>
               <ul class="nav__item">
-                <span class="nav__icon"></span>
+                <img
+                  class="nav__icon"
+                  src="./images/github-icon.svg"
+                  alt="github-icon"
+                  onload="SVGInject(this)"
+                />
                 <a href="https://github.com/vbloodi" class="nav__link"
                   >github.com/vbloodi</a
                 >
               </ul>
               <ul class="nav__item">
-                <span class="nav__icon"></span>
+                <img
+                  class="nav__icon"
+                  src="./images/email-icon.svg"
+                  alt="email-icon"
+                  onload="SVGInject(this)"
+                />
                 <a href="mailto:bloodi.code@gmail.com" class="nav__link"
                   >bloodi.code@gmail.com</a
                 >
               </ul>
               <ul class="nav__item">
-                <span class="nav__icon"></span>
+                <img
+                  class="nav__icon"
+                  src="./images/discord-icon.svg"
+                  alt="discord-icon"
+                  onload="SVGInject(this)"
+                />
                 <a
                   href="https://discordapp.com/users/1040202002090704906"
                   class="nav__link"
@@ -66,7 +95,12 @@
                 >
               </ul>
               <ul class="nav__item">
-                <span class="nav__icon"></span>
+                <img
+                  class="nav__icon"
+                  src="./images/address-icon.svg"
+                  alt="address-icon"
+                  onload="SVGInject(this)"
+                />
                 <a
                   href="https://goo.gl/maps/j5XYUgS2kzgsAN5v9"
                   class="nav__link"
@@ -78,31 +112,61 @@
               <h2 class="tech-stack__title">Tech-Stack</h2>
               <div class="tech-stack__row">
                 <div class="tech-stack__item">
-                  <span class="tech-stack__icon"></span>
+                  <img
+                    class="tech-stack__icon"
+                    src="./images/html-icon.svg"
+                    alt="html-icon"
+                    onload="SVGInject(this)"
+                  />
                   <span class="tech-stack__name">HTML</span>
                 </div>
-                <div class="tech-stack__item">
-                  <span class="tech-stack__icon"></span>
+                <div class="tech-stack__item tech-stack__item-figma">
+                  <img
+                    class="tech-stack__icon"
+                    src="./images/figma-icon.svg"
+                    alt="figma-icon"
+                    onload="SVGInject(this)"
+                  />
                   <span class="tech-stack__name">Figma</span>
                 </div>
               </div>
               <div class="tech-stack__row">
                 <div class="tech-stack__item">
-                  <span class="tech-stack__icon"></span>
+                  <img
+                    class="tech-stack__icon"
+                    src="./images/css-icon.svg"
+                    alt="css-icon"
+                    onload="SVGInject(this)"
+                  />
                   <span class="tech-stack__name">CSS</span>
                 </div>
-                <div class="tech-stack__item">
-                  <span class="tech-stack__icon"></span>
+                <div class="tech-stack__item tech-stack__item-photoshop">
+                  <img
+                    class="tech-stack__icon"
+                    src="./images/photoshop-icon.svg"
+                    alt="photoshop-icon"
+                    onload="SVGInject(this)"
+                  />
                   <span class="tech-stack__name">Photoshop</span>
                 </div>
               </div>
               <div class="tech-stack__row">
                 <div class="tech-stack__item">
-                  <span class="tech-stack__icon"></span>
+                  <img
+                    class="tech-stack__icon"
+                    src="./images/git-icon.svg"
+                    alt="git-icon"
+                    onload="SVGInject(this)"
+                  />
                   <span class="tech-stack__name">Git</span>
                 </div>
-                <div class="tech-stack__item">
-                  <span class="tech-stack__icon"></span>
+                <div class="tech-stack__item tech-stack__item-js">
+                  <img
+                    class="tech-stack__icon"
+                    src="./images/js-icon.svg"
+                    alt="js-icon"
+                    onload="SVGInject(this)"
+                  />
                   <span class="tech-stack__name">JavaScript</span>
                 </div>
               </div>
@@ -126,6 +190,7 @@
           </div>
           <div class="main-right">
             <section class="main-right__info info">
+              <div class="info__circle"></div>
               <h1 class="info__my-name">
                 <span class="info__my-name-color">Vladislav</span> Bozhkov
               </h1>
@@ -146,7 +211,12 @@
                     <div class="exp__sphere-activity">Full-time Employment</div>
                   </div>
                   <div class="exp__item">
-                    <div class="exp__link">Coming soon...</div>
+                    <img
+                      class="exp__icon"
+                      src="./images/clock-icon.svg"
+                      alt="clock-icon"
+                    />
+                    <a class="exp__link" href="#">Coming soon...</a>
                     <div class="exp__direction">Frontend Developer</div>
                   </div>
                   <div class="exp__item">
@@ -163,7 +233,12 @@
                     <div class="exp__sphere-activity">Freelance</div>
                   </div>
                   <div class="exp__item">
-                    <div class="exp__link">Patreon</div>
+                    <img
+                      class="exp__icon"
+                      src="./images/patreon-icon.svg"
+                      alt="patreon-icon"
+                    />
+                    <a class="exp__link" href="#">Patreon</a>
                     <div class="exp__direction">Indie Game Developer</div>
                   </div>
                   <div class="exp__item">
@@ -180,7 +255,12 @@
                     <div class="exp__sphere-activity">Freelance</div>
                   </div>
                   <div class="exp__item">
-                    <div class="exp__link">Patreon</div>
+                    <img
+                      class="exp__icon"
+                      src="./images/patreon-icon.svg"
+                      alt="patreon-icon"
+                    />
+                    <a class="exp__link" href="#">Patreon</a>
                     <div class="exp__direction">Visual Novel Developer</div>
                   </div>
                   <div class="exp__item">
@@ -205,7 +285,14 @@
                   Russian — Native Speaker
                 </p>
               </section>
-              <a href="" class="main-right__next-page next-page">page 1</a>
+              <a href="#" class="main-right__next-page next-page"
+                >page 1<img
+                  class="next-page__icon"
+                  src="./images/next-page-icon.svg"
+                  alt="next-page"
+                  onload="SVGInject(this)"
+                />
+              </a>
               <section class="main-right__project project">
                 <h2 class="project__title">Projects</h2>
                 <div class="project__list">
@@ -214,7 +301,12 @@
                     <div class="project__sphere-activity">rsschool-cv</div>
                   </div>
                   <div class="project__item">
-                    <div class="project__link">GitHub</div>
+                    <img
+                      class="exp__icon"
+                      src="./images/github-small-icon.svg"
+                      alt="github-small-icon"
+                    />
+                    <a class="exp__link" href="#">GitHub</a>
                     <div class="project__direction">
                       Frontend Course Student
                     </div>
@@ -252,37 +344,86 @@ Every next number is sum of two previous.*/</span>
                 <h2 class="interest__title">Interested In</h2>
                 <div class="interest__row">
                   <div class="interest__item">
-                    <span class="interest__icon"></span>
+                    <img
+                      class="interest__icon"
+                      src="./images/angular-icon.svg"
+                      alt="angular-icon"
+                      onload="SVGInject(this)"
+                    />
                     <span class="interest__name">Angular</span>
                   </div>
-                  <div class="interest__item">
-                    <span class="interest__icon"></span>
+                  <div class="interest__item interest__item-typescript">
+                    <img
+                      class="interest__icon"
+                      src="./images/typescript-icon.svg"
+                      alt="typescript-icon"
+                      onload="SVGInject(this)"
+                    />
                     <span class="interest__name">TypeScript</span>
                   </div>
                 </div>
                 <div class="interest__row">
                   <div class="interest__item">
-                    <span class="interest__icon"></span>
+                    <img
+                      class="interest__icon"
+                      src="./images/nodejs-icon.svg"
+                      alt="nodejs-icon"
+                      onload="SVGInject(this)"
+                    />
                     <span class="interest__name">Node.js</span>
                   </div>
-                  <div class="interest__item">
-                    <span class="interest__icon"></span>
+                  <div class="interest__item interest__item-react">
+                    <img
+                      class="interest__icon"
+                      src="./images/react-icon.svg"
+                      alt="react-icon"
+                      onload="SVGInject(this)"
+                    />
                     <span class="interest__name">React</span>
                   </div>
                 </div>
               </section>
-              <a href="" class="main-right__prev-page prev-page">page 2</a>
+              <a href="#" class="main-right__prev-page prev-page">
+                <img
+                  class="prev-page__icon"
+                  src="./images/next-page-icon.svg"
+                  alt="next-page"
+                  onload="SVGInject(this)"
+                />page 2</a
+              >
             </div>
           </div>
         </div>
       </main>
       <footer class="footer">
         <div class="footer-container">
-          <a href="" class="footer-git-link"></a>
-          <a href="" class="footer-rss-link"></a>
-          <div class="footer-year">2022</div>
+          <a href="" class="footer-git-link">
+            <img
+              class="footer-git__icon"
+              src="./images/github-footer-icon.svg"
+              alt="github-footer-icon"
+              onload="SVGInject(this)"
+            />
+          </a>
+          <a href="" class="footer-rss-link">
+            <img
+              class="footer-rss__icon"
+              src="./images/rsschool-logo.svg"
+              alt="rsschool-logo"
+              onload="SVGInject(this)"
+            />
+          </a>
+          <div class="footer-year">
+            <img
+              class="footer-year__icon"
+              src="./images/copyright-icon.svg"
+              alt="copyright-icon"
+              onload="SVGInject(this)"
+            />2022
+          </div>
         </div>
       </footer>
     </div>
+    <script src="svg-inject.min.js"></script>
   </body>
 </html>
