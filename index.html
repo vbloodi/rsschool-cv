@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <script src="./scripts/svg-inject.js"></script>
   </head>
   <body>
     <div class="body-container">
@@ -304,14 +305,14 @@
                       Russian — Native Speaker
                     </p>
                   </section>
-                  <a href="#" class="main-right__next-page next-page"
-                    >page 1<img
+                  <button id="add" class="main-right__next-page next-page">
+                    page 1<img
                       class="next-page__icon"
                       src="./images/next-page-icon.svg"
                       alt="next-page"
                       onload="SVGInject(this)"
                     />
-                  </a>
+                  </button>
                 </div>
                 <div class="main-right__page-2">
                   <section class="main-right__project project">
@@ -323,11 +324,11 @@
                       </div>
                       <div class="project__item">
                         <img
-                          class="exp__icon"
+                          class="project__icon"
                           src="./images/github-small-icon.svg"
                           alt="github-small-icon"
                         />
-                        <a class="exp__link" href="#">GitHub</a>
+                        <a class="project__link" href="#">GitHub</a>
                         <div class="project__direction">
                           Frontend Course Student
                         </div>
@@ -406,14 +407,14 @@ Every next number is sum of two previous.*/</span>
                       </div>
                     </div>
                   </section>
-                  <a href="#" class="main-right__prev-page prev-page">
+                  <button id="remove" class="main-right__prev-page prev-page">
                     <img
                       class="prev-page__icon"
                       src="./images/next-page-icon.svg"
                       alt="next-page"
                       onload="SVGInject(this)"
-                    />page 2</a
-                  >
+                    />page 2
+                  </button>
                 </div>
               </div>
             </div>
@@ -449,6 +450,6 @@ Every next number is sum of two previous.*/</span>
         </div>
       </footer>
     </div>
-    <script src="svg-inject.min.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
