@@ -24,20 +24,32 @@
             alt="clip-icon"
           />
           <p class="header__document-format">This document is in A4 format</p>
-          <p class="header__download-info">
-            Select the format of the document to download
-          </p>
           <div class="header-download">
             <div class="header-download__format format">
               <div class="format__download-links">
-                <a href="" class="format__pdf">pdf</a>
-                <a href="" class="format__docx">docx</a>
+                <a
+                  href="#"
+                  class="format__pdf"
+                  target="_parent"
+                  onclick="underDevelopment()"
+                  >pdf</a
+                >
+                <a
+                  href="#"
+                  class="format__docx"
+                  target="_parent"
+                  onclick="underDevelopment()"
+                  >docx</a
+                >
               </div>
               <img
                 class="header-download__icon"
                 src="./images/download-icon.svg"
                 alt="download-icon"
               />
+              <p class="header__download-info">
+                Select the extension of the document to download
+              </p>
             </div>
           </div>
         </div>
@@ -49,84 +61,89 @@
               <img
                 class="main-left__avatar"
                 src="./pictures/my-photo.jpg"
-                alt="My Photo"
+                alt="Vladislav Bozhkov Photo"
               />
               <div class="main-left__picture"></div>
             </div>
             <nav class="main-left__nav nav">
-              <ul class="nav__item">
-                <img
-                  class="nav__icon"
-                  src="./images/linkedin-icon.svg"
-                  alt="linkedin-icon"
-                  onload="SVGInject(this)"
-                />
-                <a href="https://linkedin.com/in/vbloodi" class="nav__link"
-                  >linkedin.com/in/vbloodi</a
-                >
-              </ul>
-              <ul class="nav__item">
-                <img
-                  class="nav__icon"
-                  src="./images/github-icon.svg"
-                  alt="github-icon"
-                  onload="SVGInject(this)"
-                />
-                <a href="https://github.com/vbloodi" class="nav__link"
-                  >github.com/vbloodi</a
-                >
-              </ul>
-              <ul class="nav__item">
-                <img
-                  class="nav__icon"
-                  src="./images/telegram-icon.svg"
-                  alt="telegram-icon"
-                  onload="SVGInject(this)"
-                />
-                <a href="https://t.me/vbloodi" class="nav__link">@vbloodi</a>
-              </ul>
-              <ul class="nav__item">
-                <img
-                  class="nav__icon"
-                  src="./images/discord-icon.svg"
-                  alt="discord-icon"
-                  onload="SVGInject(this)"
-                />
-                <a
-                  href="https://discordapp.com/users/1040202002090704906"
-                  class="nav__link"
-                  >vbloodi#6804</a
-                >
-              </ul>
-              <ul class="nav__item">
-                <img
-                  class="nav__icon"
-                  src="./images/email-icon.svg"
-                  alt="email-icon"
-                  onload="SVGInject(this)"
-                />
-                <a href="mailto:bloodi.code@gmail.com" class="nav__link"
-                  >bloodi.code@gmail.com</a
-                >
-              </ul>
-              <ul class="nav__item">
-                <img
-                  class="nav__icon"
-                  src="./images/address-icon.svg"
-                  alt="address-icon"
-                  onload="SVGInject(this)"
-                />
-                <a
-                  href="https://goo.gl/maps/j5XYUgS2kzgsAN5v9"
-                  class="nav__link"
-                  >Gomel, Belarus</a
-                >
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="https://linkedin.com/in/vbloodi">
+                    <img
+                      class="nav__icon"
+                      src="./images/linkedin-icon.svg"
+                      alt="linkedin-icon"
+                      onload="SVGInject(this)"
+                    />
+                    <p class="nav__link">linkedin.com/in/vbloodi</p>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="https://github.com/vbloodi">
+                    <img
+                      class="nav__icon"
+                      src="./images/github-icon.svg"
+                      alt="linkedin-icon"
+                      onload="SVGInject(this)"
+                    />
+                    <p class="nav__link nav__link-github">github.com/vbloodi</p>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="https://t.me/vbloodi">
+                    <img
+                      class="nav__icon"
+                      src="./images/telegram-icon.svg"
+                      alt="linkedin-icon"
+                      onload="SVGInject(this)"
+                    />
+                    <p class="nav__link nav__link-telegram">@vbloodi</p>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="https://discordapp.com/users/1040202002090704906">
+                    <img
+                      class="nav__icon"
+                      src="./images/discord-icon.svg"
+                      alt="linkedin-icon"
+                      onload="SVGInject(this)"
+                    />
+                    <p class="nav__link nav__link-discord">vbloodi#6804</p>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="mailto:bloodi.code@gmail.com">
+                    <img
+                      class="nav__icon"
+                      src="./images/email-icon.svg"
+                      alt="linkedin-icon"
+                      onload="SVGInject(this)"
+                    />
+                    <p class="nav__link nav__link-email">
+                      bloodi.code@gmail.com
+                    </p>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="https://goo.gl/maps/j5XYUgS2kzgsAN5v9">
+                    <img
+                      class="nav__icon"
+                      src="./images/address-icon.svg"
+                      alt="linkedin-icon"
+                      onload="SVGInject(this)"
+                    />
+                    <p class="nav__link nav__link-address">Gomel, Belarus</p>
+                  </a>
+                </li>
               </ul>
             </nav>
             <section class="main-left__tech-stack tech-stack">
               <h2 class="tech-stack__title">Tech-Stack</h2>
               <div class="tech-stack__row">
-                <div class="tech-stack__item">
+                <a
+                  href="https://en.wikipedia.org/wiki/HTML5"
+                  class="tech-stack__item tech-stack__item-html"
+                >
                   <img
                     class="tech-stack__icon"
                     src="./images/html-icon.svg"
@@ -134,8 +151,11 @@
                     onload="SVGInject(this)"
                   />
                   <span class="tech-stack__name">HTML</span>
-                </div>
-                <div class="tech-stack__item tech-stack__item-figma">
+                </a>
+                <a
+                  href="https://www.figma.com/"
+                  class="tech-stack__item tech-stack__item-figma"
+                >
                   <img
                     class="tech-stack__icon"
                     src="./images/figma-icon.svg"
@@ -143,10 +163,13 @@
                     onload="SVGInject(this)"
                   />
                   <span class="tech-stack__name">Figma</span>
-                </div>
+                </a>
               </div>
               <div class="tech-stack__row">
-                <div class="tech-stack__item">
+                <a
+                  href="https://en.wikipedia.org/wiki/CSS"
+                  class="tech-stack__item tech-stack__item-css"
+                >
                   <img
                     class="tech-stack__icon"
                     src="./images/css-icon.svg"
@@ -154,8 +177,11 @@
                     onload="SVGInject(this)"
                   />
                   <span class="tech-stack__name">CSS</span>
-                </div>
-                <div class="tech-stack__item tech-stack__item-photoshop">
+                </a>
+                <a
+                  href="https://www.adobe.com/products/photoshop.html"
+                  class="tech-stack__item tech-stack__item-photoshop"
+                >
                   <img
                     class="tech-stack__icon"
                     src="./images/photoshop-icon.svg"
@@ -163,10 +189,13 @@
                     onload="SVGInject(this)"
                   />
                   <span class="tech-stack__name">Photoshop</span>
-                </div>
+                </a>
               </div>
               <div class="tech-stack__row">
-                <div class="tech-stack__item">
+                <a
+                  href="https://git-scm.com/"
+                  class="tech-stack__item tech-stack__item-git"
+                >
                   <img
                     class="tech-stack__icon"
                     src="./images/git-icon.svg"
@@ -174,8 +203,11 @@
                     onload="SVGInject(this)"
                   />
                   <span class="tech-stack__name">Git</span>
-                </div>
-                <div class="tech-stack__item tech-stack__item-js">
+                </a>
+                <a
+                  href="https://en.wikipedia.org/wiki/JavaScript"
+                  class="tech-stack__item tech-stack__item-js"
+                >
                   <img
                     class="tech-stack__icon"
                     src="./images/js-icon.svg"
@@ -183,7 +215,7 @@
                     onload="SVGInject(this)"
                   />
                   <span class="tech-stack__name">JavaScript</span>
-                </div>
+                </a>
               </div>
             </section>
             <section class="main-left-qualities qualities">
@@ -212,9 +244,9 @@
               <h2 class="info__profession">Frontend-Developer</h2>
               <p class="info__text">
                 I keen on IT because I've always been interested in computer
-                applications. Since I started creating projects in various
-                engines, I've become more and more interested in how it works
-                and how created applications that make it all work
+                applications. Since I started creating various projects, I've
+                become more and more interested in how it works and how to
+                create applications that make it all work
               </p>
             </section>
             <div class="main-right__container">
@@ -235,7 +267,9 @@
                           src="./images/clock-icon.svg"
                           alt="clock-icon"
                         />
-                        <a class="exp__link" href="#">Coming soon...</a>
+                        <a class="exp__link" href="#" target="_parent"
+                          >Coming soon...</a
+                        >
                         <div class="exp__direction">Frontend Developer</div>
                       </div>
                       <div class="exp__item">
@@ -257,7 +291,9 @@
                           src="./images/patreon-icon.svg"
                           alt="patreon-icon"
                         />
-                        <a class="exp__link" href="#">Patreon</a>
+                        <a class="exp__link" href="https://patreon.com/"
+                          >Patreon</a
+                        >
                         <div class="exp__direction">Indie Game Developer</div>
                       </div>
                       <div class="exp__item">
@@ -279,7 +315,9 @@
                           src="./images/patreon-icon.svg"
                           alt="patreon-icon"
                         />
-                        <a class="exp__link" href="#">Patreon</a>
+                        <a class="exp__link" href="https://patreon.com/"
+                          >Patreon</a
+                        >
                         <div class="exp__direction">Visual Novel Developer</div>
                       </div>
                       <div class="exp__item">
@@ -328,7 +366,11 @@
                           src="./images/github-small-icon.svg"
                           alt="github-small-icon"
                         />
-                        <a class="project__link" href="#">GitHub</a>
+                        <a
+                          class="project__link"
+                          href="https://vbloodi.github.io/rsschool-cv/index.html"
+                          >GitHub</a
+                        >
                         <div class="project__direction">
                           Frontend Course Student
                         </div>
@@ -367,7 +409,10 @@ Every next number is sum of two previous.*/</span>
                   <section class="main-left__interest interest">
                     <h2 class="interest__title">Interested In</h2>
                     <div class="interest__row">
-                      <div class="interest__item">
+                      <a
+                        href="https://angular.io/"
+                        class="interest__item interest__item-angular"
+                      >
                         <img
                           class="interest__icon"
                           src="./images/angular-icon.svg"
@@ -375,8 +420,11 @@ Every next number is sum of two previous.*/</span>
                           onload="SVGInject(this)"
                         />
                         <span class="interest__name">Angular</span>
-                      </div>
-                      <div class="interest__item interest__item-typescript">
+                      </a>
+                      <a
+                        href="https://www.typescriptlang.org/"
+                        class="interest__item interest__item-typescript"
+                      >
                         <img
                           class="interest__icon"
                           src="./images/typescript-icon.svg"
@@ -384,10 +432,13 @@ Every next number is sum of two previous.*/</span>
                           onload="SVGInject(this)"
                         />
                         <span class="interest__name">TypeScript</span>
-                      </div>
+                      </a>
                     </div>
                     <div class="interest__row">
-                      <div class="interest__item">
+                      <a
+                        href="https://nodejs.org/en/"
+                        class="interest__item interest__item-nodejs"
+                      >
                         <img
                           class="interest__icon"
                           src="./images/nodejs-icon.svg"
@@ -395,8 +446,11 @@ Every next number is sum of two previous.*/</span>
                           onload="SVGInject(this)"
                         />
                         <span class="interest__name">Node.js</span>
-                      </div>
-                      <div class="interest__item interest__item-react">
+                      </a>
+                      <a
+                        href="https://reactjs.org/"
+                        class="interest__item interest__item-react"
+                      >
                         <img
                           class="interest__icon"
                           src="./images/react-icon.svg"
@@ -404,7 +458,7 @@ Every next number is sum of two previous.*/</span>
                           onload="SVGInject(this)"
                         />
                         <span class="interest__name">React</span>
-                      </div>
+                      </a>
                     </div>
                   </section>
                   <button id="remove" class="main-right__prev-page prev-page">
@@ -423,7 +477,7 @@ Every next number is sum of two previous.*/</span>
       </main>
       <footer class="footer">
         <div class="footer-container">
-          <a href="" class="footer-git-link">
+          <a href="https://github.com/vbloodi" class="footer-git-link">
             <img
               class="footer-git__icon"
               src="./images/github-footer-icon.svg"
@@ -431,7 +485,7 @@ Every next number is sum of two previous.*/</span>
               onload="SVGInject(this)"
             />
           </a>
-          <a href="" class="footer-rss-link">
+          <a href="https://rs.school/js/" class="footer-rss-link">
             <img
               class="footer-rss__icon"
               src="./images/rsschool-logo.svg"
@@ -439,14 +493,14 @@ Every next number is sum of two previous.*/</span>
               onload="SVGInject(this)"
             />
           </a>
-          <div class="footer-year">
+          <a class="footer-year" href="#" target="_parent">
             <img
               class="footer-year__icon"
               src="./images/copyright-icon.svg"
               alt="copyright-icon"
               onload="SVGInject(this)"
             />2022
-          </div>
+          </a>
         </div>
       </footer>
     </div>
