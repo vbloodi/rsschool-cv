@@ -1,12 +1,509 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Vladislav Bozhkov" />
+    <meta name="description" content="Vladislav Bozhkov — Curriculum Vitae" />
+    <base target="_blank" />
+    <title>Vladislav Bozhkov - CV</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="./scripts/svg-inject.js"></script>
+  </head>
+  <body>
+    <div class="body-container">
+      <header class="header">
+        <div class="header-container">
+          <img
+            class="header-icon"
+            src="./images/clip-icon.svg"
+            alt="clip-icon"
+          />
+          <p class="header__document-format">This document is in A4 format</p>
+          <div class="header-download">
+            <div class="header-download__format format">
+              <div class="format__download-links">
+                <a
+                  href="#"
+                  class="format__pdf"
+                  target="_parent"
+                  onclick="underDevelopment()"
+                  >pdf</a
+                >
+                <a
+                  href="#"
+                  class="format__docx"
+                  target="_parent"
+                  onclick="underDevelopment()"
+                  >docx</a
+                >
+              </div>
+              <img
+                class="header-download__icon"
+                src="./images/download-icon.svg"
+                alt="download-icon"
+              />
+              <p class="header__download-info">
+                Select the extension of the document to download
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main-container">
+          <div class="main-left">
+            <div class="main-left__img">
+              <img
+                class="main-left__avatar"
+                src="./pictures/my-photo.jpg"
+                alt="Vladislav Bozhkov Photo"
+              />
+              <div class="main-left__picture"></div>
+            </div>
+            <nav class="main-left__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="https://linkedin.com/in/vbloodi">
+                    <img
+                      class="nav__icon"
+                      src="./images/linkedin-icon.svg"
+                      alt="linkedin-icon"
+                      onload="SVGInject(this)"
+                    />
+                    <p class="nav__link">linkedin.com/in/vbloodi</p>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="https://github.com/vbloodi">
+                    <img
+                      class="nav__icon"
+                      src="./images/github-icon.svg"
+                      alt="linkedin-icon"
+                      onload="SVGInject(this)"
+                    />
+                    <p class="nav__link nav__link-github">github.com/vbloodi</p>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="https://t.me/vbloodi">
+                    <img
+                      class="nav__icon"
+                      src="./images/telegram-icon.svg"
+                      alt="linkedin-icon"
+                      onload="SVGInject(this)"
+                    />
+                    <p class="nav__link nav__link-telegram">@vbloodi</p>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="https://discordapp.com/users/1040202002090704906">
+                    <img
+                      class="nav__icon"
+                      src="./images/discord-icon.svg"
+                      alt="linkedin-icon"
+                      onload="SVGInject(this)"
+                    />
+                    <p class="nav__link nav__link-discord">vbloodi#6804</p>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="mailto:bloodi.code@gmail.com">
+                    <img
+                      class="nav__icon"
+                      src="./images/email-icon.svg"
+                      alt="linkedin-icon"
+                      onload="SVGInject(this)"
+                    />
+                    <p class="nav__link nav__link-email">
+                      bloodi.code@gmail.com
+                    </p>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="https://goo.gl/maps/j5XYUgS2kzgsAN5v9">
+                    <img
+                      class="nav__icon"
+                      src="./images/address-icon.svg"
+                      alt="linkedin-icon"
+                      onload="SVGInject(this)"
+                    />
+                    <p class="nav__link nav__link-address">Gomel, Belarus</p>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <section class="main-left__tech-stack tech-stack">
+              <h2 class="tech-stack__title">Tech-Stack</h2>
+              <div class="tech-stack__row">
+                <a
+                  href="https://en.wikipedia.org/wiki/HTML5"
+                  class="tech-stack__item tech-stack__item-html"
+                >
+                  <img
+                    class="tech-stack__icon"
+                    src="./images/html-icon.svg"
+                    alt="html-icon"
+                    onload="SVGInject(this)"
+                  />
+                  <span class="tech-stack__name">HTML</span>
+                </a>
+                <a
+                  href="https://www.figma.com/"
+                  class="tech-stack__item tech-stack__item-figma"
+                >
+                  <img
+                    class="tech-stack__icon"
+                    src="./images/figma-icon.svg"
+                    alt="figma-icon"
+                    onload="SVGInject(this)"
+                  />
+                  <span class="tech-stack__name">Figma</span>
+                </a>
+              </div>
+              <div class="tech-stack__row">
+                <a
+                  href="https://en.wikipedia.org/wiki/CSS"
+                  class="tech-stack__item tech-stack__item-css"
+                >
+                  <img
+                    class="tech-stack__icon"
+                    src="./images/css-icon.svg"
+                    alt="css-icon"
+                    onload="SVGInject(this)"
+                  />
+                  <span class="tech-stack__name">CSS</span>
+                </a>
+                <a
+                  href="https://www.adobe.com/products/photoshop.html"
+                  class="tech-stack__item tech-stack__item-photoshop"
+                >
+                  <img
+                    class="tech-stack__icon"
+                    src="./images/photoshop-icon.svg"
+                    alt="photoshop-icon"
+                    onload="SVGInject(this)"
+                  />
+                  <span class="tech-stack__name">Photoshop</span>
+                </a>
+              </div>
+              <div class="tech-stack__row">
+                <a
+                  href="https://git-scm.com/"
+                  class="tech-stack__item tech-stack__item-git"
+                >
+                  <img
+                    class="tech-stack__icon"
+                    src="./images/git-icon.svg"
+                    alt="git-icon"
+                    onload="SVGInject(this)"
+                  />
+                  <span class="tech-stack__name">Git</span>
+                </a>
+                <a
+                  href="https://en.wikipedia.org/wiki/JavaScript"
+                  class="tech-stack__item tech-stack__item-js"
+                >
+                  <img
+                    class="tech-stack__icon"
+                    src="./images/js-icon.svg"
+                    alt="js-icon"
+                    onload="SVGInject(this)"
+                  />
+                  <span class="tech-stack__name">JavaScript</span>
+                </a>
+              </div>
+            </section>
+            <section class="main-left-qualities qualities">
+              <h2 class="qualities__title">Personal Qualities</h2>
+              <ul class="qualities__list">
+                <li class="qualities__item">
+                  Continuous development of teamwork and communication skills
+                </li>
+                <li class="qualities__item">
+                  Willingness to grow up in professional skills and learn new
+                  technologies
+                </li>
+                <li class="qualities__item">
+                  Responsibility for the work performed and readiness for
+                  difficulties
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div class="main-right">
+            <section class="main-right__info info">
+              <div class="info__circle"></div>
+              <h1 class="info__my-name">
+                <span class="info__my-name-color">Vladislav</span> Bozhkov
+              </h1>
+              <h2 class="info__profession">Frontend-Developer</h2>
+              <p class="info__text">
+                I keen on IT because I've always been interested in computer
+                applications. Since I started creating various projects, I've
+                become more and more interested in how it works and how to
+                create applications that make it all work
+              </p>
+            </section>
+            <div class="main-right__container">
+              <div class="main-right__page">
+                <div class="main-right__page-1">
+                  <section class="main-right__exp exp">
+                    <h2 class="exp__title">Working Experience</h2>
+                    <div class="exp__list">
+                      <div class="exp__item">
+                        <div class="exp__date">01/2023 - 01/2045</div>
+                        <div class="exp__sphere-activity">
+                          Full-time Employment
+                        </div>
+                      </div>
+                      <div class="exp__item">
+                        <img
+                          class="exp__icon"
+                          src="./images/clock-icon.svg"
+                          alt="clock-icon"
+                        />
+                        <a class="exp__link" href="#" target="_parent"
+                          >Coming soon...</a
+                        >
+                        <div class="exp__direction">Frontend Developer</div>
+                      </div>
+                      <div class="exp__item">
+                        <p class="exp__skills">
+                          <span class="exp__skills-color">skills:</span><br />
+                          HTML5, CSS3, JavaScript, TypeScript, Angular, React,
+                          Node.js, Git, GitLab, etc.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="exp__list">
+                      <div class="exp__item">
+                        <div class="exp__date">06/2021 - 03/2022</div>
+                        <div class="exp__sphere-activity">Freelance</div>
+                      </div>
+                      <div class="exp__item">
+                        <img
+                          class="exp__icon"
+                          src="./images/patreon-icon.svg"
+                          alt="patreon-icon"
+                        />
+                        <a class="exp__link" href="https://patreon.com/"
+                          >Patreon</a
+                        >
+                        <div class="exp__direction">Indie Game Developer</div>
+                      </div>
+                      <div class="exp__item">
+                        <p class="exp__skills">
+                          <span class="exp__skills-color">skills:</span><br />
+                          RPG Maker MZ, RPG Maker MV, Photoshop, HTML, CSS,
+                          Testing, Game Design, Level Design
+                        </p>
+                      </div>
+                    </div>
+                    <div class="exp__list">
+                      <div class="exp__item">
+                        <div class="exp__date">12/2018 - 01/2020</div>
+                        <div class="exp__sphere-activity">Freelance</div>
+                      </div>
+                      <div class="exp__item">
+                        <img
+                          class="exp__icon"
+                          src="./images/patreon-icon.svg"
+                          alt="patreon-icon"
+                        />
+                        <a class="exp__link" href="https://patreon.com/"
+                          >Patreon</a
+                        >
+                        <div class="exp__direction">Visual Novel Developer</div>
+                      </div>
+                      <div class="exp__item">
+                        <p class="exp__skills">
+                          <span class="exp__skills-color">skills:</span><br />
+                          Ren&apos;Py, Photoshop, Blender, Sony Vegas, Sublime
+                          Text 4, Game Design, Testing, UI Design
+                        </p>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="main-right__education education">
+                    <h2 class="education__title">Education</h2>
+                    <p class="education__text">
+                      Rolling Scopes School Course<br />«JavaScript/Front-end.
+                      Stage 0»
+                    </p>
+                  </section>
+                  <section class="main-right__language language">
+                    <h2 class="language__title">Language</h2>
+                    <p class="language__text">
+                      English — B1<br />
+                      Russian — Native Speaker
+                    </p>
+                  </section>
+                  <button id="add" class="main-right__next-page next-page">
+                    page 1<img
+                      class="next-page__icon"
+                      src="./images/next-page-icon.svg"
+                      alt="next-page"
+                      onload="SVGInject(this)"
+                    />
+                  </button>
+                </div>
+                <div class="main-right__page-2">
+                  <section class="main-right__project project">
+                    <h2 class="project__title">Projects</h2>
+                    <div class="project__list">
+                      <div class="project__item">
+                        <div class="project__date">12/10/2022 - 12/17/2022</div>
+                        <div class="project__sphere-activity">rsschool-cv</div>
+                      </div>
+                      <div class="project__item">
+                        <img
+                          class="project__icon"
+                          src="./images/github-small-icon.svg"
+                          alt="github-small-icon"
+                        />
+                        <a
+                          class="project__link"
+                          href="https://vbloodi.github.io/rsschool-cv/index.html"
+                          >GitHub</a
+                        >
+                        <div class="project__direction">
+                          Frontend Course Student
+                        </div>
+                      </div>
+                      <div class="project__item">
+                        <p class="project__skills">
+                          <span class="project__skills-color">skills:</span
+                          ><br />
+                          HTML, CSS, JavaScript, GitHub, Visual Studio Code,
+                          Figma
+                        </p>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="main-right__code-example code-example">
+                    <h2 class="code-example__title">Code Example</h2>
+                    <div class="code-example__field">
+                      <pre class="code-example__code">
+<span class="code-example__code-green">/*Calculate n Fibonacci sequence numbers
+Every next number is sum of two previous.*/</span>
+<span class="code-example__code-blue">let</span> <span class="code-example__code-light-blue">n</span> = <span class="code-example__code-light-green">10</span>;
 
-</body>
+<span class="code-example__code-blue">let</span> <span class="code-example__code-light-blue">current</span> = <span class="code-example__code-light-green">0</span>;
+<span class="code-example__code-blue">let</span> <span class="code-example__code-light-blue">prev</span> = <span class="code-example__code-light-green">1</span>;
+<span class="code-example__code-blue">let</span> <span class="code-example__code-light-blue">prevPrev</span> = <span class="code-example__code-light-green">0</span>;
+
+<span class="code-example__code-light-pink">while</span> <span class="code-example__code-light-yellow">(</span><span class="code-example__code-light-blue">n</span>-- &gt; <span class="code-example__code-light-green">0</span><span class="code-example__code-light-yellow">)</span> <span class="code-example__code-light-yellow">{</span>
+  <span class="code-example__code-light-blue">prevPrev</span> = <span class="code-example__code-light-blue">prev</span>;
+  <span class="code-example__code-light-blue">prev</span> = <span class="code-example__code-light-blue">current</span>;
+  <span class="code-example__code-light-blue">current</span> += <span class="code-example__code-light-blue">prevPrev</span>;
+  <span class="code-example__code-light-blue">console</span>.log<span class="code-example__code-light-pink">(</span><span class="code-example__code-light-blue">current</span><span class="code-example__code-light-pink">)</span>;
+  <span class="code-example__code-light-yellow">}</span>
+</pre>
+                    </div>
+                  </section>
+                  <section class="main-left__interest interest">
+                    <h2 class="interest__title">Interested In</h2>
+                    <div class="interest__row">
+                      <a
+                        href="https://angular.io/"
+                        class="interest__item interest__item-angular"
+                      >
+                        <img
+                          class="interest__icon"
+                          src="./images/angular-icon.svg"
+                          alt="angular-icon"
+                          onload="SVGInject(this)"
+                        />
+                        <span class="interest__name">Angular</span>
+                      </a>
+                      <a
+                        href="https://www.typescriptlang.org/"
+                        class="interest__item interest__item-typescript"
+                      >
+                        <img
+                          class="interest__icon"
+                          src="./images/typescript-icon.svg"
+                          alt="typescript-icon"
+                          onload="SVGInject(this)"
+                        />
+                        <span class="interest__name">TypeScript</span>
+                      </a>
+                    </div>
+                    <div class="interest__row">
+                      <a
+                        href="https://nodejs.org/en/"
+                        class="interest__item interest__item-nodejs"
+                      >
+                        <img
+                          class="interest__icon"
+                          src="./images/nodejs-icon.svg"
+                          alt="nodejs-icon"
+                          onload="SVGInject(this)"
+                        />
+                        <span class="interest__name">Node.js</span>
+                      </a>
+                      <a
+                        href="https://reactjs.org/"
+                        class="interest__item interest__item-react"
+                      >
+                        <img
+                          class="interest__icon"
+                          src="./images/react-icon.svg"
+                          alt="react-icon"
+                          onload="SVGInject(this)"
+                        />
+                        <span class="interest__name">React</span>
+                      </a>
+                    </div>
+                  </section>
+                  <button id="remove" class="main-right__prev-page prev-page">
+                    <img
+                      class="prev-page__icon"
+                      src="./images/next-page-icon.svg"
+                      alt="next-page"
+                      onload="SVGInject(this)"
+                    />page 2
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer-container">
+          <a href="https://github.com/vbloodi" class="footer-git-link">
+            <img
+              class="footer-git__icon"
+              src="./images/github-footer-icon.svg"
+              alt="github-footer-icon"
+              onload="SVGInject(this)"
+            />
+          </a>
+          <a href="https://rs.school/js/" class="footer-rss-link">
+            <img
+              class="footer-rss__icon"
+              src="./images/rsschool-logo.svg"
+              alt="rsschool-logo"
+              onload="SVGInject(this)"
+            />
+          </a>
+          <a class="footer-year" href="#" target="_parent">
+            <img
+              class="footer-year__icon"
+              src="./images/copyright-icon.svg"
+              alt="copyright-icon"
+              onload="SVGInject(this)"
+            />2022
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>
