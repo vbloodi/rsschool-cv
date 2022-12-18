@@ -10,21 +10,23 @@ remove.addEventListener("click", () => {
   rotate.classList.remove("rotate180");
 });
 
+let isActive = false;
 const avaImg = document.querySelector(".main-left__img");
 const infoCircle = document.querySelector(".info__circle");
 
 avaImg.addEventListener("click", function () {
-  avaImg.classList.add("ava-anim");
-  infoCircle.classList.add("circle-anim");
-  setTimeout(function () {
-    avaImg.classList.remove("ava-anim");
-    infoCircle.classList.remove("circle-anim");
-  }, 1500);
+  if (!isActive) {
+    avaImg.classList.add("ava-anim");
+    infoCircle.classList.add("circle-anim");
+    document.body.classList.toggle("invert-theme");
+    isActive = true;
+    setTimeout(function () {
+      avaImg.classList.remove("ava-anim");
+      infoCircle.classList.remove("circle-anim");
+      isActive = false;
+    }, 2000);
+  }
 });
-
-avaImg.onclick = function () {
-  document.body.classList.toggle("invert-theme");
-};
 
 function underDevelopment() {
   alert("Currently under development! ツ");
