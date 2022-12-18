@@ -107,6 +107,10 @@
   }
 }
 
+/* body:has(.main-left__img:hover) .info__my-name {
+  color: green !important;
+} */
+
 .ava-anim {
   animation: ava-anim 1.5s alternate ease 1;
 }
@@ -336,6 +340,7 @@ button {
   border-radius: 50%;
   box-shadow: 0px 2px 4px var(--primary-box-shadow);
   cursor: pointer;
+  user-select: none;
   transition: box-shadow, transform, 0.4s ease-in-out;
 }
 
